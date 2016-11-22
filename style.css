@@ -1,0 +1,49 @@
+/*.ftk-card {
+  background-color: red !important;
+}*/
+
+.ftk-buttonbar {
+  text-align: center;
+  padding:5px;
+}
+
+.ftk-hidden {
+  display:none;
+}
+
+.ftk-workingon {
+  padding-left: 10px !important;
+  padding-right: 10px;
+}
+
+.ftk-taskname {
+  text-decoration:none;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+.ftk-disconnected {
+  background-color: red;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.ftk-stopbutton {
+  text-decoration: none;
+  color: white !important;
+  background-color: rgba(0, 0, 0, .3);
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.ftk-startoperation {
+  right:30px !important;
+  background-color: rgba(0, 0, 0, .7) !important;
+  color: white !important;
+  font-size: .8em;
+}

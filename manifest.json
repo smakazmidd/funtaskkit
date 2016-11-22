@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "FunTaskKit",
+  "description": "This extension allows you to track time spent on trello cards right from inside trello",
+  "version": "0.1",
+  "icons": { "16": "icon2.png",
+           "48": "icon2.png",
+          "128": "icon2.png" },
+  "browser_action": {
+    "default_icon": "icon2.png"
+  },
+  "background": {
+    "scripts": ["socket.io-1.4.5.js", "moment.min.js", "bg.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://trello.com/*"
+      ],
+      "css": [
+        "style.css",
+        "animate.css"
+      ],
+      "js": [
+        "jquery-3.1.1.min.js",
+        "jquery-observe.js",
+        "jquery.stopwatch.js",
+        "jquery.signalr-2.2.1.min.js",
+        "ftk.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "notifications",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
